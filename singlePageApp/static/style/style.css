@@ -1,0 +1,80 @@
+html, body{
+    height: 100%;
+    max-height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.table{
+    position: static;
+}
+
+.dirs{
+    position: absolute;
+    background-color: rgb(65, 65, 65);
+    width: 30%;
+    height: 100%;
+    margin-left: 1%;
+    padding: 3%;
+}
+
+.root{
+    position: relative;
+}
+
+.heir{
+    position: inherit;
+    padding-left: 30px;
+}
+
+.dirs_names_static{
+    color: rgb(157, 157, 157);
+    margin-top: -18px;
+    margin-left: 30px;
+}
+
+.file_names_static{
+    color: rgb(157, 157, 157);
+    margin-top: -18px;
+    margin-left: 23px;
+}
+
+
+
+.content{
+    position: absolute;
+    background-color: white;
+    width: 70%;
+    height: 100%;
+    margin-left: 35%;
+}
+
+.name{
+    position: relative;
+}
+
+.dir_info{
+    color: rgb(120, 120, 120)
+}
+
+.del_static{
+    position: absolute;
+    margin-left: 70%;
+    margin-top: -70px;
+}
+
+.new_folder{
+    position: relative;
+    margin-top: 10%;
+    margin-left: 10%;
+}
+.new_file{
+    margin-top: -105px;
+    margin-left: 500px;
+}
+
+.static_text{
+    color: rgb(21, 126, 251)
+}
+.active_text{
+    color: rgb(255, 172, 32)
+}

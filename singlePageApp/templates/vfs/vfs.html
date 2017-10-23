@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+    <div class="table">
+        <div class="row">
+            <div class="dirs">
+
+                <div class="root">
+                    <a href="/"><img src="{% static "closed.png" %}" alt="O"/><p class="dirs_names_static">Root</p></a>
+
+                    <div class="heir">
+                        <a href="/"><img src="{% static "closed.png" %}" alt="O"/><p class="dirs_names_static">Примеры</p></a>
+
+                        <div class="heir">
+                            <a href="/"><img src="{% static "closed.png" %}" alt="O"/><p class="dirs_names_static">Java</p></a>
+                        </div>
+                        <div class="heir">
+                            <a href="/"><img src="{% static "closed.png" %}" alt="O"/><p class="dirs_names_static">Php</p></a>
+
+                            <div class="heir">
+                                <a href="/"><img src="{% static "closed.png" %}" alt="O"/><p class="dirs_names_static">Скрипты</p></a>
+
+                                <div class="heir">
+                                    <a href="/"><img src="{% static "fileStatic.png" %}" alt="O"/><p class="file_names_static">HelloWorld.php</p></a>
+                                </div>
+                                <div class="heir">
+                                    <a href="/"><img src="{% static "fileStatic.png" %}" alt="O"/><p class="file_names_static">Array.php</p></a>
+                                </div>
+                                <div class="heir">
+                                    <a href="/"><img src="{% static "fileStatic.png" %}" alt="O"/><p class="file_names_static">Your_first_program.php</p></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="heir">
+                            <a href="/"><img src="{% static "closed.png" %}" alt="O"/><p class="dirs_names_static">Go</p></a>
+                        </div>
+                        <div class="heir">
+                            <a href="/"><img src="{% static "closed.png" %}" alt="O"/><p class="dirs_names_static">C++</p></a>
+                        </div>
+                    </div>
+
+                    <div class="heir">
+                        <a href="/"><img src="{% static "closed.png" %}" alt="O"/><p class="dirs_names_static">Help</p></a>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="content">
+                <div>
+                    <h1 class="name">DirName</h2>
+                    <p class = "dir_info">354 МБ, 3 папки, 2 файла</p>
+                    <a href="/" class="del_static">
+                        <img src="{% static "delStatic.png" %}" "alt=O"/>
+                    </a>
+                    <div class="new_folder" id="new_folder">
+                        <a href="/">
+                            <img src="{% static "1.png" %}" "alt=O"/>
+                        </a>
+                        <p class="static_text">Создать папку</p>
+                    </div>
+                    <div class="new_file">
+                        <a href="/">
+                            <img style="margin-left:15px" src="{% static "newFileStatic.png" %}" />
+                        </a>
+                        <p class="static_text" margin-left="20px">Создать файл</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
